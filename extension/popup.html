@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Chat With This Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <span class="dot" id="status-dot"></span>
+      <div class="header-text">
+        <strong>Chat With This Page</strong>
+        <small id="status">Starting…</small>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <button id="summarize" class="summarize" type="button" disabled>
+        ✦ Summarize this page
+      </button>
+    </div>
+
+    <main id="messages" class="messages"></main>
+
+    <form id="chat-form" class="chat-form">
+      <textarea
+        id="input"
+        class="input"
+        rows="1"
+        placeholder="Ask about this page…"
+        disabled
+      ></textarea>
+      <button id="send" class="send" type="submit" disabled>Send</button>
+    </form>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
