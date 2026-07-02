@@ -2,6 +2,8 @@
 .env
 *.env
 !.env.example
+extension/config.js
+!extension/config.example.js
 
 # Python
 __pycache__/
