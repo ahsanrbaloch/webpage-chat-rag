@@ -16,7 +16,7 @@ from .schemas import (
     IngestResponse,
 )
 
-app = FastAPI(title="Chat With This Page", version="1.0.0")
+app = FastAPI(title="Webpage Chat RAG", version="1.0.0")
 
 # Extensions call from a chrome-extension:// origin. Allowing all origins is fine
 # because the real gate is the shared token + rate limit, not the browser origin.
